@@ -1,4 +1,4 @@
-int n=64,margin=10;
+int n=100,margin=40;
 PVector[] point=new PVector[n];
 ArrayList<PVector> hull=new ArrayList<PVector>(); //<>// //<>// //<>//
 void setup() {
@@ -9,6 +9,7 @@ void setup() {
     if(point[i].x < margin) point[i].x+=margin;
     if(point[i].y < margin) point[i].y+=margin;
   }
+  smooth();
   noLoop();
   convexhull(); //<>//
 }
